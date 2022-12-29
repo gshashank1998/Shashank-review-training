@@ -2,11 +2,15 @@ class MathsCalculations
 {
     public int factorial(int number)         // factorial calcuations
     {
-        int i,fact=1;
-        for(i=1;i<=number;i++)
-          fact*=i;
-        return fact;  
+        if(number<0){
+            return -1
+        }else if (number ==0 || number == 1){
+            return 1;   
+        }else{
+            return number * this.factorial(number-1);
+        }
     }
+    
     public double square(double number)     // square of double numbers
     {
         return number*number;
