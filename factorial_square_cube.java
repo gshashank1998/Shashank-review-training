@@ -19,13 +19,9 @@ class MathsCalculations
     {
         return number*number*number;
     }
-}
-public class MainClass
-{
-    public static void main(String arg[])
-    {
-        MathsCalculations obj=new MathsCalculations();   // creating object of MathsCalculations class
-
+    
+    
+    public void runCode(){
         int number1 = 5;
         double number2 = 5.5;
         if(number1>0 && number1<=20)          // checking if number1 is within the range
@@ -33,5 +29,15 @@ public class MainClass
         else System.out.println("number1 is out of range");
         System.out.println("square of "+number2+" = "+obj.square(number2));
         System.out.println("cube of "+number2+" = "+obj.cube(number2));
+    
+    }
+}
+public class MainClass
+{
+    public static void main(String arg[])
+    {
+        MathsCalculations obj=new MathsCalculations();   // creating object of MathsCalculations class
+        obj.runCode();
+     
     }
 }
